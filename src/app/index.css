@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: "climate-crisis-main";
+    src: url("/fonts/ClimateCrisis-1979.woff2");
+}
+@font-face {
+    font-family: "climate-crisis-numeric" ;
+    src: url("/fonts/ClimateCrisis-1990.woff2");
+}
