@@ -1,7 +1,8 @@
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "@/app/Layout";
-import { Home, NoMatch } from "@/pages";
+import { NoMatch } from "@/pages";
+import { Home } from "@/pages/Home";
 
 const App: FC = () => {
   return (
