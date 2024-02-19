@@ -2,10 +2,9 @@ import { FC } from "react";
 import Hero from "../components/Hero";
 import { Prize } from "@/widgets/Prize";
 import { CountDown } from "@/widgets/CountDown";
-import Sponsers from "@/widgets/Sponsers/Page/Page";
-import About from "@/widgets/About/ui/Page/Page";
+import Sponsers from "@/widgets/Sponsers/ui/Page/Page";
 import TimeFlow from "@/widgets/TimeFlow/ui/Page/Page";
-import Theme from "@/widgets/Theme/ui/Page/Page";
+import { Register } from "@/widgets/Register";
 
 const Home: FC = () => {
   return (
@@ -15,10 +14,8 @@ const Home: FC = () => {
       <Prize />
       <Theme/>
       <Sponsers/>
-      <About/>
-      
       <TimeFlow/>
-      
+      <Register/>
     </>
   );
 };

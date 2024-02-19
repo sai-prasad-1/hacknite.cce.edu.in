@@ -1,27 +1,29 @@
 import { CustomFont } from "@/widgets/CustomFont";
+import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
 
-const Home: FC = () => {
+const Prize: FC = () => {
     return (
         <>
-            <section>
-                <div className="grid md:grid-rows-2 grid-rows-3 md:grid-cols-3 grid-col-1 min-h-[50vh]">
+            <SectionLayout>
+                <div className="grid grid-rows-3 grid-cols-3 min-h-[50vh]">
+                    <span className="capitalize col-span-3 row-span-1 text-center flex items-center justify-center"><CustomFont title>PrizePool</CustomFont></span>
                     <div className="flex items-center justify-center flex-col w-full uppercase col-span-3 row-span-1">
-                        <span className="text-3xl">Title Winner</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
+                        <span className="text-2xl bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">Title Winner</span>
+                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">rs 30,000</span></CustomFont>
                     </div>
                     <div className="flex items-center justify-center flex-col col-span-1 row-span-1">
-                        <span className="text-3xl">First Runners Up</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
+                        <span className="text-2xl bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">First Runners Up</span>
+                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">rs 30,000</span></CustomFont>
                     </div>
                     <div className="flex items-center justify-center flex-col md:col-start-3 col-span-1 row-span-1">
-                        <span className="text-3xl">Best UI</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
+                        <span className="text-2xl bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">Best UI</span>
+                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">rs 30,000</span></CustomFont>
                     </div>
                 </div>
-            </section>
+            </SectionLayout>
         </>
     );
 };
 
-export default Home;
+export default Prize;
