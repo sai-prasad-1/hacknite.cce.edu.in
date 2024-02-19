@@ -1,10 +1,10 @@
-
+import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
 
-const About: FC = () => {
+const Register: FC = () => {
     return (
         <>
-            <section>
+            <SectionLayout>
                 <div className="flex items-center justify-center">
                     <img src="/images/full_moon.png" className="w-96 object-contain" />
                     <div>
@@ -21,9 +21,9 @@ const About: FC = () => {
                         </button>
                     </div>
                 </div>
-            </section>
+            </SectionLayout>
         </>
     );
 };
 
-export default About;
+export default Register;

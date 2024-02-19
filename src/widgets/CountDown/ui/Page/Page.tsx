@@ -3,6 +3,7 @@ import moon from "/images/moon.png";
 import { CustomFont } from "@/widgets/CustomFont";
 import { useEffect, useState } from "react";
 import { Time } from "../../Model/types";
+import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 
 const CountDown: FC<Time> = () => {
     const targetDate = new Date("2024-02-28");
@@ -47,49 +48,53 @@ const CountDown: FC<Time> = () => {
 
     return (
         <>
-            <section className="min-h-[70vh] flex items-center justify-center">
-                <div className="flex justify-center p-10 relative items-center w-full">
-                    <div className=" hero-content w-[90%] h-40  border-[1px] border-white rounded-xl">
-                        <div className="w-[45%] flex items-center flex-col gap-2 justify-center">
-                            <CustomFont highlightedTitle><span>{days}</span></CustomFont>
-                            <CustomFont highlightedTitle><span className="text-3xl uppercase">days</span></CustomFont>
-                        </div>
-                        <div className="w-[55%] flex items-center justify-evenly">
-                            <div className="flex items-center justify-center gap-5">
-                                <div className="flex items-center justify-center flex-col">
-                                    <CustomFont highlightedTitle numeric>{hours}</CustomFont>
-                                    <CustomFont title><span className="uppercase text-3xl">Hours</span></CustomFont>
-                                </div>
-                                <div className="flex items-center flex-col gap-2 justify-center">
-                                    <div className="w-3 h-3 bg-[#52D3D8]"></div>
-                                    <div className="w-3 h-3 bg-[#52D3D8]"></div>
-                                </div>
+            <SectionLayout>
+                <div className="min-h-[70vh] flex items-center justify-center">
+                    <div className="flex justify-center p-10 relative items-center w-full">
+                        <div className=" hero-content w-[90%] h-40  border-[1px] border-white rounded-xl">
+                            <div className="w-[45%] flex items-center flex-col gap-2 justify-center">
+                                <CustomFont highlightedTitle><span>{days}</span></CustomFont>
+                                <CustomFont highlightedTitle><span className="text-3xl uppercase">days</span></CustomFont>
                             </div>
-                            <div className="flex items-center justify-center gap-5">
-                                <div className="flex items-center justify-center flex-col">
-                                    <CustomFont highlightedTitle numeric>{minutes}</CustomFont>
-                                    <CustomFont title><span className="uppercase text-3xl">Min</span></CustomFont>
+                            <div className="w-[55%] flex items-center justify-evenly">
+                                <div className="flex items-center justify-center gap-5">
+                                    <div className="flex items-center justify-center flex-col">
+                                        <CustomFont highlightedTitle numeric>{hours}</CustomFont>
+                                        <CustomFont title><span className="uppercase text-3xl">Hours</span></CustomFont>
+                                    </div>
+                                    <div className="flex items-center flex-col gap-2 justify-center">
+                                        <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                        <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                    </div>
                                 </div>
-                                <div className="flex items-center flex-col gap-2 justify-center">
-                                    <div className="w-3 h-3 bg-[#52D3D8]"></div>
-                                    <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                <div className="flex items-center justify-center gap-5">
+                                    <div className="flex items-center justify-center flex-col">
+                                        <CustomFont highlightedTitle numeric>{minutes}</CustomFont>
+                                        <CustomFont title><span className="uppercase text-3xl">Min</span></CustomFont>
+                                    </div>
+                                    <div className="flex items-center flex-col gap-2 justify-center">
+                                        <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                        <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex items-center justify-center gap-5">
-                                <div className="flex items-center justify-center flex-col">
-                                    <CustomFont highlightedTitle numeric>{seconds}</CustomFont>
-                                    <CustomFont title><span className="uppercase text-3xl">Sec</span></CustomFont>
+                                <div className="flex items-center justify-center gap-5">
+                                    <div className="flex items-center justify-center flex-col">
+                                        <CustomFont highlightedTitle numeric>{seconds}</CustomFont>
+                                        <CustomFont title><span className="uppercase text-3xl">Sec</span></CustomFont>
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
+                        </div>
+                        <div className="absolute top-[-15px] left-5">
+                            <img src={moon} className="object-contain w-80 block" />
                         </div>
                     </div>
-                    <div className="absolute top-[-15px] left-5">
-                        <img src={moon} className="object-contain w-80 block" />
-                    </div>
+
                 </div>
 
-            </section>
+            </SectionLayout>
+
         </>
     );
 };

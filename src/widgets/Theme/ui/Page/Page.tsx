@@ -1,7 +1,7 @@
 import { CustomFont } from "@/widgets/CustomFont";
 import { FC } from "react";
 
-const Home: FC = () => {
+const Theme: FC = () => {
     return (
         <>
             <section>
@@ -24,4 +24,4 @@ const Home: FC = () => {
     );
 };
 
-export default Home;
+export default Theme;
