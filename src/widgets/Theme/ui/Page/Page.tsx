@@ -1,27 +1,33 @@
-import { CustomFont } from "@/widgets/CustomFont";
-import { FC } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 
-const Home: FC = () => {
+const Theme: FC = () => {
+    const [startOffset, setStartOffset] = useState("1200px");
+    const textPathRef = useRef<SVGTextPathElement | null>(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const h = document.documentElement;
+            const b = document.body;
+            const st = 'scrollTop';
+            const sh = 'scrollHeight';
+            const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+            setStartOffset((-percent * 40 + 1200) + "px");
+        };
+
+        document.addEventListener("scroll", handleScroll);
+        return () => {
+            document.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <>
-            <section>
-                <div className="grid md:grid-rows-2 grid-rows-3 md:grid-cols-3 grid-col-1 min-h-[50vh]">
-                    <div className="flex items-center justify-center flex-col w-full uppercase col-span-3 row-span-1">
-                        <span className="text-3xl">Title Winner</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
-                    </div>
-                    <div className="flex items-center justify-center flex-col col-span-1 row-span-1">
-                        <span className="text-3xl">First Runners Up</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
-                    </div>
-                    <div className="flex items-center justify-center flex-col md:col-start-3 col-span-1 row-span-1">
-                        <span className="text-3xl">Best UI</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
-                    </div>
-                </div>
-            </section>
-        </>
+        <svg width="100%" height="160px" viewBox="0 0 1098.72 89.55">
+            <path id="curve" fill="transparent" d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
+            <text width="100%" style={{ transform: 'translate3d(0,0,0)' }}>
+                <textPath ref={textPathRef} style={{ transform: 'translate3d(0,0,0)' }} alignmentBaseline="auto" xlinkHref="#curve" startOffset={startOffset} id="text-path">*The pictures are not technically selfies.</textPath>
+            </text>
+        </svg>
     );
 };
 
-export default Home;
+export default Theme;
