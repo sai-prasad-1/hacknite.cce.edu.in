@@ -20,6 +20,7 @@ const Register: FC = () => {
                             Register Now
                         </button>
                     </div>
+
                 </div>
             </SectionLayout>
         </>
