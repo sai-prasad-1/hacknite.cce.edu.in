@@ -7,17 +7,17 @@ const Prize: FC = () => {
         <>
             <SectionLayout>
                 <div className="grid grid-rows-3 grid-cols-3 min-h-[50vh]">
-                    <span className="capitalize col-span-3 row-span-1 text-center flex items-center justify-center"><CustomFont title>PrizePool</CustomFont></span>
+                    <div className=" col-span-3 row-span-1 flex items-center justify-center"><CustomFont description><span className="capitalize text-5xl font-semibold">PrizePool</span></CustomFont></div>
                     <div className="flex items-center justify-center flex-col w-full uppercase col-span-3 row-span-1">
-                        <span className="text-2xl bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">Title Winner</span>
+                        <span className="text-2xl font-tertiary bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">Title Winner</span>
                         <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">rs 30,000</span></CustomFont>
                     </div>
                     <div className="flex items-center justify-center flex-col col-span-1 row-span-1">
-                        <span className="text-2xl bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">First Runners Up</span>
+                        <span className="text-2xl font-tertiary bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">First Runners Up</span>
                         <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">rs 30,000</span></CustomFont>
                     </div>
                     <div className="flex items-center justify-center flex-col md:col-start-3 col-span-1 row-span-1">
-                        <span className="text-2xl bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">Best UI</span>
+                        <span className="text-2xl font-tertiary bg-[#55FFFF] text-[#00575B] font-bold p-1 px-3 text-center rounded-full">Best UI</span>
                         <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">rs 30,000</span></CustomFont>
                     </div>
                 </div>

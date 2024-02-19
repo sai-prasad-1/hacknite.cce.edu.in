@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         primary: ["climate-crisis-main"],
         secondary: ["cakra"],
+        tertiary: ["Neue"],
       },
     },
   },

@@ -11,6 +11,10 @@
     font-family: "cakra" ;
     src: url("/fonts/Cakra-Normal.woff2");
 }
+@font-face {
+  font-family: "Neue" ;
+  src: url("/fonts/NeueMachina-Regular.woff2");
+}
 
 :root {
     --foreground-rgb: 0, 0, 0;

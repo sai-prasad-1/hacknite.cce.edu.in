@@ -5,7 +5,7 @@ import { FC } from "react";
 const Hero: FC = () => {
   return (
     <>
-      <SectionLayout>
+      <SectionLayout hero>
         <div className="hero min-h-[calc(100vh-64px)]">
           <div className="hero-content flex-col">
             <img

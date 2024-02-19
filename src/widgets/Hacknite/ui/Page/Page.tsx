@@ -6,21 +6,12 @@ const Hacknite: FC = () => {
     return (
         <>
             <SectionLayout>
-            <div className="flex items-center justify-center flex-col p-10">
-                    <div className="flex items-center justify-center flex-col w-full">
-                        <img src="images/hacknight.png" alt="" />
-                        
-                    </div>
-                    
-                    <div className=" text-white text-5xl text-justify" >
-                        <p>Welcome to HackNite, a thrilling 24-hour coding competition hosted by the vibrant code community of developers at Christ College of Engineering. Embrace the challenge as you dive into a whirlwind of innovation, collaboration, and coding prowess, all in the pursuit of crafting groundbreaking solutions.</p>         
-                     </div>
-
-​
-
-
+                <div className="flex mb-6 sm:mb-12 lg:mb-0 gap-5 bg-center items-center justify-center flex-col p-10">
+                    <img src="images/hacknight.png" alt="" className="w-72 object-contain" />
+                    <div className="min-w-64 flex-1 text-justify text-3xl ">
+                        <p className="leading-10 font-tertiary">Welcome to HackNite, a thrilling 24-hour coding competition hosted by the vibrant code community of developers at Christ College of Engineering. Embrace the challenge as you dive into a whirlwind of innovation, collaboration, and coding prowess, all in the pursuit of crafting groundbreaking solutions.</p></div>
                 </div>
-            </SectionLayout>
+            </SectionLayout >
         </>
     );
 };
