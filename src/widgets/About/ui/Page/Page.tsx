@@ -1,10 +1,11 @@
 
+import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
 
 const About: FC = () => {
     return (
         <>
-            <section>
+            <SectionLayout>
             <div className="flex items-center justify-center flex-col p-10">
                     <div><span className="flex items-start justify-center flex-col w-full">
                         <span className="font-primary text-[#005151] stroke-3 stroke-[#55FFFF]">WHAT IS HACKNITE ?</span>
@@ -24,7 +25,7 @@ const About: FC = () => {
                     </div>
 
                 </div>
-            </section>
+            </SectionLayout>
         </>
     );
 };
