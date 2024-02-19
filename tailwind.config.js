@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#52D3D8",
+        primary: "#55FFFF",
         secondary: "white",
         tertiary: "#030402",
         quarternary: "rgba(255, 255, 255, 0.2)",
       },
       fontFamily: {
         primary: ["climate-crisis-main"],
-        secondary: ["climate-crisis-numeric"],
+        secondary: ["cakra"],
       },
     },
   },

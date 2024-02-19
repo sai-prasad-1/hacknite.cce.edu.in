@@ -8,8 +8,8 @@
     src: url("/fonts/ClimateCrisis-1979.woff2");
 }
 @font-face {
-    font-family: "climate-crisis-numeric" ;
-    src: url("/fonts/ClimateCrisis-1990.woff2");
+    font-family: "cakra" ;
+    src: url("/fonts/Cakra-Normal.woff2");
 }
 
 :root {
@@ -61,9 +61,9 @@
   /* Custom CSS */
   @layer base {
     .text-stroke-primary {
-      -webkit-text-stroke: 2px #dfff1b;
+      -webkit-text-stroke: 1px #ffffff;
     }
     .text-stroke-secondary {
-      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+      -webkit-text-stroke: 50px #52D3D8;
     }
   }

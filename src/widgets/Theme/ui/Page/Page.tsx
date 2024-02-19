@@ -1,25 +1,21 @@
 import { CustomFont } from "@/widgets/CustomFont";
+import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
 
 const Theme: FC = () => {
     return (
         <>
-            <section>
-                <div className="grid md:grid-rows-2 grid-rows-3 md:grid-cols-3 grid-col-1 min-h-[50vh]">
-                    <div className="flex items-center justify-center flex-col w-full uppercase col-span-3 row-span-1">
-                        <span className="text-3xl">Title Winner</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
+            <SectionLayout>
+                <CustomFont description>
+                    <div className="flex items-center justify-center flex-col gap-5">
+                        <span className="text-5xl">Our Theme</span>
+                        <span className="text-5xl">Open Innovation</span>
+                        <p className="text-justify text-3xl">
+                            Participants have the freedom to choose their own problem statement based on their interests and expertise.
+                        </p>
                     </div>
-                    <div className="flex items-center justify-center flex-col col-span-1 row-span-1">
-                        <span className="text-3xl">First Runners Up</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
-                    </div>
-                    <div className="flex items-center justify-center flex-col md:col-start-3 col-span-1 row-span-1">
-                        <span className="text-3xl">Best UI</span>
-                        <CustomFont highlightedTitle><span className="uppercase text-3xl font-numeric">30,000 INR</span></CustomFont>
-                    </div>
-                </div>
-            </section>
+                </CustomFont>
+            </SectionLayout>
         </>
     );
 };

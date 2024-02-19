@@ -1,11 +1,12 @@
 import { CustomFont } from "@/widgets/CustomFont";
+import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
 
 const Hero: FC = () => {
   return (
     <>
-      <section>
-        <div className="hero min-h-[calc(100vh-64px)] bg-base-200">
+      <SectionLayout>
+        <div className="hero min-h-[calc(100vh-64px)]">
           <div className="hero-content flex-col">
             <img
               src="/images/hacknight.png"
@@ -16,7 +17,7 @@ const Hero: FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </SectionLayout>
     </>
   );
 };

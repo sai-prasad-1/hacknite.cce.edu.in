@@ -7,7 +7,6 @@ import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayou
 
 const CountDown: FC<Time> = () => {
     const targetDate = new Date("2024-02-28");
-    const eventDays = ["28", "29", "01"];
 
     const calculateTimeLeft = (targetDate: Date) => {
         const difference = targetDate.getTime() - new Date().getTime();
@@ -59,8 +58,8 @@ const CountDown: FC<Time> = () => {
                             <div className="w-[55%] flex items-center justify-evenly">
                                 <div className="flex items-center justify-center gap-5">
                                     <div className="flex items-center justify-center flex-col">
-                                        <CustomFont highlightedTitle numeric>{hours}</CustomFont>
-                                        <CustomFont title><span className="uppercase text-3xl">Hours</span></CustomFont>
+                                        <CustomFont highlightedTitle>{hours}</CustomFont>
+                                        <span className="font-primary text-transparent text-stroke-primary uppercase text-3xl">Hours</span>
                                     </div>
                                     <div className="flex items-center flex-col gap-2 justify-center">
                                         <div className="w-3 h-3 bg-[#52D3D8]"></div>
@@ -69,8 +68,8 @@ const CountDown: FC<Time> = () => {
                                 </div>
                                 <div className="flex items-center justify-center gap-5">
                                     <div className="flex items-center justify-center flex-col">
-                                        <CustomFont highlightedTitle numeric>{minutes}</CustomFont>
-                                        <CustomFont title><span className="uppercase text-3xl">Min</span></CustomFont>
+                                        <CustomFont highlightedTitle>{minutes}</CustomFont>
+                                        <span className="uppercase text-3xl text-transparent text-stroke-primary font-primary">Min</span>
                                     </div>
                                     <div className="flex items-center flex-col gap-2 justify-center">
                                         <div className="w-3 h-3 bg-[#52D3D8]"></div>
@@ -79,8 +78,8 @@ const CountDown: FC<Time> = () => {
                                 </div>
                                 <div className="flex items-center justify-center gap-5">
                                     <div className="flex items-center justify-center flex-col">
-                                        <CustomFont highlightedTitle numeric>{seconds}</CustomFont>
-                                        <CustomFont title><span className="uppercase text-3xl">Sec</span></CustomFont>
+                                        <CustomFont highlightedTitle>{seconds}</CustomFont>
+                                        <span className="uppercase text-3xl text-transparent text-stroke-primary font-primary">Sec</span>
                                     </div>
                                 </div>
 
