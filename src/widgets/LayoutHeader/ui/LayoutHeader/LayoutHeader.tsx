@@ -8,7 +8,7 @@ const LayoutHeader: FC = () => {
       <div className="navbar bg-black text-white">
   <div className="navbar-start ">
 
-    <a className=""><img src="../public\images\IMG_5548 3.png" alt="logo" width={100} height={100} /></a>
+    <a className=""><img src="..public/images/IMG_5548 3.png." alt="logo" width={100} height={100} /></a>
   </div>
 
    <div className="navbar-end gap-10"> 

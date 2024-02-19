@@ -3,9 +3,12 @@ import Hero from "../components/Hero";
 import { Prize } from "@/widgets/Prize";
 import { CountDown } from "@/widgets/CountDown";
 import Sponsers from "@/widgets/Sponsers/ui/Page/Page";
-import Register from "@/widgets/Register/ui/Page/Page";
+import TimeFlow from "@/widgets/TimeFlow/ui/Page/Page";
+import { Register } from "@/widgets/Register";
 import Theme from "@/widgets/Theme/ui/Page/Page";
-import { Events } from "@/widgets/Events";
+import About from "@/widgets/About/ui/Page/Page";
+import AboutUs from "@/widgets/AboutUs/ui/Page/Page";
+import { Hacknite } from "@/widgets/Hacknite";
 
 const Home: FC = () => {
   return (
@@ -13,10 +16,13 @@ const Home: FC = () => {
       <Hero />
       <CountDown />
       <Prize />
-      <Register/>
       <Theme/>
       <Sponsers/>
-      <Events/>
+      <TimeFlow/>
+      <About/>
+      <Register/>
+      <AboutUs/>
+      <Hacknite/>
     </>
   );
 };

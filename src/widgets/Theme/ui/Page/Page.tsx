@@ -1,8 +1,27 @@
 import { CustomFont } from "@/widgets/CustomFont";
-import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
 
 const Theme: FC = () => {
+    const [startOffset, setStartOffset] = useState("1200px");
+    const textPathRef = useRef<SVGTextPathElement | null>(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const h = document.documentElement;
+            const b = document.body;
+            const st = 'scrollTop';
+            const sh = 'scrollHeight';
+            const percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+            setStartOffset((-percent * 40 + 1200) + "px");
+        };
+
+        document.addEventListener("scroll", handleScroll);
+        return () => {
+            document.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+
     return (
         <>
             <SectionLayout>
