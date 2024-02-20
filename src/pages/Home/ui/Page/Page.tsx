@@ -11,6 +11,7 @@ import { Hacknite } from "@/widgets/Hacknite";
 import { Rules } from "@/widgets/Rules";
 import { Venue } from "@/widgets/Venue";
 import { TimeFlow } from "@/widgets/TimeFlow";
+import { WebsiteTeam } from "@/widgets/WebTeam";
 
 const Home: FC = () => {
   return (
@@ -27,6 +28,7 @@ const Home: FC = () => {
       <Register/>
       <AboutUs/>
       <Hacknite/>
+      <WebsiteTeam/>
     </>
   );
 };
