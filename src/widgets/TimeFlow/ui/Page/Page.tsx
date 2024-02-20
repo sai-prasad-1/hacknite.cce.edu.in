@@ -1,4 +1,4 @@
-import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
+import { CustomFont } from "@/widgets/CustomFont";
 import Jupiter from "/images/Jupiter.png";
 import { FC } from "react";
 
@@ -21,7 +21,7 @@ const TimeFlow: FC = () => {
       title: "26th February",
       description: "Shotlisted Teams For Hacknite",
     },
-    
+
   ];
   const Data: TimeFlowItem[] = [
     {
@@ -36,36 +36,34 @@ const TimeFlow: FC = () => {
       title: "29th February",
       description: "Hacknite ends and Valedictory ceremony ",
     },
-    
+
   ];
 
   return (
-    <>
-      <SectionLayout>
-        <div className="mb-10">
-          <h1 className="font-tertiary font-semibold text-4xl">TIMELINE OF HACKNITE</h1>
-        </div>
-        <div>
-          <ul className="flex justify-between mb-10">
-            {data.map((item, index) => (
-              <li className="flex flex-col justify-center items-start" key={index}>
-                <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
-                <p className="font-tertiary font-light w-[250px]">{item.description}</p>
-              </li>
-            ))}
-          </ul>
-          <ul className="flex justify-between">
-            {Data.map((item, index) => (
-              <li className="flex flex-col justify-center items-start" key={index}>
-                <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
-                <p className="font-tertiary font-light w-[250px]">{item.description}</p>
-              </li>
-            ))}
-          </ul>
-              <img src={Jupiter} alt="Jupiter" className="absolute top-0 right-0 " />
-        </div>
-      </SectionLayout>
-    </>
+    <div className="min-h-[calc(90vh-70px)] flex items-center justify-evenly flex-col">
+      <CustomFont title>
+        TIMELINE OF HACKNITE
+      </CustomFont>
+      <div>
+        <ul className="flex justify-between mb-10">
+          {data.map((item, index) => (
+            <li className="flex flex-col justify-center items-start" key={index}>
+              <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
+              <p className="font-tertiary font-light w-[250px]">{item.description}</p>
+            </li>
+          ))}
+        </ul>
+        <ul className="flex justify-between">
+          {Data.map((item, index) => (
+            <li className="flex flex-col justify-center items-start" key={index}>
+              <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
+              <p className="font-tertiary font-light w-[250px]">{item.description}</p>
+            </li>
+          ))}
+        </ul>
+        <img src={Jupiter} alt="Jupiter" className="absolute top-0 right-0 " />
+      </div>
+    </div>
   );
 };
 

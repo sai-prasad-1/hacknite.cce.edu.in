@@ -1,11 +1,9 @@
 
-import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
 
 const Sponsers: FC = () => {
     return (
         <>
-            <SectionLayout>
                 <div className="flex items-center justify-center flex-col gap-10 p-10">
                     <span className="text-3xl font-secondary">POWERED BY</span>
                     <div className="flex items-center justify-evenly w-full">
@@ -14,7 +12,6 @@ const Sponsers: FC = () => {
                         <img src="/images/devfolio.png" className="w-72 object-contain" />
                     </div>
                 </div>
-            </SectionLayout>
         </>
     );
 };

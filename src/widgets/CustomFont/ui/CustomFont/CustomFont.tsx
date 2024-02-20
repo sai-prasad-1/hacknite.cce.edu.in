@@ -6,10 +6,10 @@ const CustomFont: FC<CustomFont> = ({ children,
     highlightedTitle = false,
     description = false,
     highlightedDescription = false,
-    numeric = false,
-    border = false }) => {
+    numeric = false
+    }) => {
     let className = numeric
-        ? "font-tertiary font-extrabold "
+        ? "font-primary font-bold "
         : title || highlightedTitle
             ? "font-secondary "
             : "font-tertiary ";
@@ -20,7 +20,6 @@ const CustomFont: FC<CustomFont> = ({ children,
             ? "font-extrabold "
             : "";
 
-    className += border ? "border-[1px] border-white bg-transparent" : "";
 
     if (title)
         className +=
@@ -32,8 +31,8 @@ const CustomFont: FC<CustomFont> = ({ children,
         className += "text-md md:text-xl lg:text-2xl text-justify text-secondary";
     else if (highlightedDescription)
         className += "text-md md:text-xl lg:text-2xl text-justify text-primary";
-    else if (border)
-        className += "text-md md:text-xl lg:text-2xl text-justify text-tertiary";
+    else if (numeric)
+        className += "text-2xl sm:text-4xl md:text-4xl lg:text-5xl text-justify text-primary";
 
     return (
         <span className={className}>

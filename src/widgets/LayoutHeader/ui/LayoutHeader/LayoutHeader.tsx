@@ -14,10 +14,10 @@ const LayoutHeader: FC = () => {
 
           <div className="navbar-end gap-10">
 
-            <a className="link link-hover uppercase">Home</a>
-            <a className="link link-hover uppercase">Events</a>
-            <a className="link link-hover uppercase">TimeLine</a>
-            <a className="link link-hover uppercase">About</a>
+            <a className="link link-hover uppercase" href="/">Home</a>
+            <a className="link link-hover uppercase" href="#events">Events</a>
+            <a className="link link-hover uppercase" href="/timeline">TimeLine</a>
+            <a className="link link-hover uppercase" href="/about">About</a>
             <a className="btn bg-transparent border-none hover:bg-transparent"><img src="/images/register_now.svg" alt="logo" className="object-contain w-48" /></a>
           </div>
         </header>
