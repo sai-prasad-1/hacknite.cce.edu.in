@@ -4,10 +4,10 @@ import { FC } from "react";
 
 const LayoutFooter: FC = () => {
   return (
-    <>
+    <div className="h-[80vh]">
       <SectionLayout>
-        <div>
-          <CustomFont description><span className="text-5xl">WANT TO <span className="text-[#27FFFF]">KNOW MORE</span> ?<br />
+        <div >
+          <CustomFont title><span className="text-5xl">WANT TO <span className="text-[#27FFFF]">KNOW MORE</span> ?<br />
             CONNECT WITH US.</span>
           </CustomFont>
           <div className="flex items-center justify-start gap-5 mt-5 flex-wrap">
@@ -33,20 +33,8 @@ const LayoutFooter: FC = () => {
                 </CustomFont>
               </div>
             </div>
-            <div className="flex items-center justify-center gap-5">
-              <img src='/images/insta.png' className="object-contain w-10" />
-              <div>
-                <CustomFont>
-                  <span className="text-[#D8D8D8]">
-                    hacknite@gmail.com<br />
-                    code@cce.edu.in
-                  </span>
-                </CustomFont>
-              </div>
-            </div>
           </div>
         </div>
-        <div></div>
       </SectionLayout>
       <div className="w-screen bg-tertiary min-w-80 overflow-x-clip border border-x-0 border-t-0 border-quarternary px-6 sm:px-12" >
         <div className="relative w-full border-y-0 flex items-center justify-center border border-quarternary">
@@ -64,7 +52,8 @@ const LayoutFooter: FC = () => {
           <CustomFont description><a className="text-[#ffffffa5] link link-hover text-xl">Copyright © 2024 Community Of Developers. All Rights Reserved.</a></CustomFont>
         </div>
       </SectionLayout>
-    </>
+    </div>
+
   );
 };
 
