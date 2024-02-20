@@ -9,6 +9,8 @@ import Theme from "@/widgets/Theme/ui/Page/Page";
 import About from "@/widgets/About/ui/Page/Page";
 import AboutUs from "@/widgets/AboutUs/ui/Page/Page";
 import { Hacknite } from "@/widgets/Hacknite";
+import { Rules } from "@/widgets/Rules";
+import { Venue } from "@/widgets/Venue";
 
 const Home: FC = () => {
   return (
@@ -19,6 +21,8 @@ const Home: FC = () => {
       <Theme/>
       <Sponsers/>
       <TimeFlow/>
+      <Venue/>
+      <Rules/>
       <About/>
       <Register/>
       <AboutUs/>
