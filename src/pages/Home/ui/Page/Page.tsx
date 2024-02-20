@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 // import { Prize } from "@/widgets/Prize";
 import { CountDown } from "@/widgets/CountDown";
 import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
-import { LayoutHeader } from "@/widgets";
 import { Prize } from "@/widgets/Prize";
 // import Sponsers from "@/widgets/Sponsers/ui/Page/Page";
 // import { Register } from "@/widgets/Register";

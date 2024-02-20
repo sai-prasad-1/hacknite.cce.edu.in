@@ -23,6 +23,21 @@ const TimeFlow: FC = () => {
     },
     
   ];
+  const Data: TimeFlowItem[] = [
+    {
+      title: "28th February",
+      description: "Inaugration of Hacknite @9:30am",
+    },
+    {
+      title: "28th February",
+      description: "Hacknite-Hackathon Begins @10:00am",
+    },
+    {
+      title: "29th February",
+      description: "Hacknite ends and Valedictory ceremony ",
+    },
+    
+  ];
 
   return (
     <>
@@ -35,15 +50,15 @@ const TimeFlow: FC = () => {
             {data.map((item, index) => (
               <li className="flex flex-col justify-center items-start" key={index}>
                 <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
-                <p className="font-tertiary font-light">{item.description}</p>
+                <p className="font-tertiary font-light w-[250px]">{item.description}</p>
               </li>
             ))}
           </ul>
           <ul className="flex justify-between">
-            {data.map((item, index) => (
+            {Data.map((item, index) => (
               <li className="flex flex-col justify-center items-start" key={index}>
                 <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
-                <p className="font-tertiary font-light">{item.description}</p>
+                <p className="font-tertiary font-light w-[250px]">{item.description}</p>
               </li>
             ))}
           </ul>
