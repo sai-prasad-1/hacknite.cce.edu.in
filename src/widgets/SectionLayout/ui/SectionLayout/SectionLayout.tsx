@@ -14,6 +14,7 @@ interface SectionProps {
     blurred?: boolean;
     hero?: boolean;
     imageContent?: boolean;
+    noHorizontalLines?: boolean;
 }
 
 const SectionLayout = ({
@@ -28,6 +29,7 @@ const SectionLayout = ({
     blurred = false,
     hero = false,
     imageContent = false,
+    noHorizontalLines = false
 }: SectionProps) => {
 
     return (
@@ -44,8 +46,9 @@ const SectionLayout = ({
             )}
         >
             <div
-                className={clsx("relative w-full border-y-0 border-quarternary", {
+                className={clsx("relative w-full  border-quarternary", {
                     border: !noVerticalLines,
+                    "border-y-0": !noHorizontalLines,
                     "px-4 sm:px-8 lg:px-16": !full,
                     "py-2 sm:py-4 lg:py-9": !full && !navbar,
                     "py-2 sm:py-4": navbar,

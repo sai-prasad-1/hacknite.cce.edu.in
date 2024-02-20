@@ -47,53 +47,48 @@ const CountDown: FC<Time> = () => {
 
     return (
         <>
-            <SectionLayout>
-                <div className="min-h-[70vh] flex items-center justify-center">
-                    <div className="flex justify-center p-10 relative items-center w-full">
-                        <div className=" hero-content w-[90%] h-40  border-[1px] border-white rounded-xl">
-                            <div className="w-[45%] flex items-center flex-col gap-2 justify-center">
-                                <CustomFont highlightedTitle><span>{days}</span></CustomFont>
-                                <CustomFont highlightedTitle><span className="text-3xl uppercase">days</span></CustomFont>
-                            </div>
-                            <div className="w-[55%] flex items-center justify-evenly">
-                                <div className="flex items-center justify-center gap-5">
-                                    <div className="flex items-center justify-center flex-col">
-                                        <CustomFont highlightedTitle>{hours}</CustomFont>
-                                        <span className="font-primary text-transparent text-stroke-primary uppercase text-3xl">Hours</span>
-                                    </div>
-                                    <div className="flex items-center flex-col gap-2 justify-center">
-                                        <div className="w-3 h-3 bg-[#52D3D8]"></div>
-                                        <div className="w-3 h-3 bg-[#52D3D8]"></div>
-                                    </div>
-                                </div>
-                                <div className="flex items-center justify-center gap-5">
-                                    <div className="flex items-center justify-center flex-col">
-                                        <CustomFont highlightedTitle>{minutes}</CustomFont>
-                                        <span className="uppercase text-3xl text-transparent text-stroke-primary font-primary">Min</span>
-                                    </div>
-                                    <div className="flex items-center flex-col gap-2 justify-center">
-                                        <div className="w-3 h-3 bg-[#52D3D8]"></div>
-                                        <div className="w-3 h-3 bg-[#52D3D8]"></div>
-                                    </div>
-                                </div>
-                                <div className="flex items-center justify-center gap-5">
-                                    <div className="flex items-center justify-center flex-col">
-                                        <CustomFont highlightedTitle>{seconds}</CustomFont>
-                                        <span className="uppercase text-3xl text-transparent text-stroke-primary font-primary">Sec</span>
-                                    </div>
-                                </div>
-
-                            </div>
+            <div className="min-h-[70vh] flex items-center justify-center">
+                <div className="flex justify-center p-10 relative items-center w-full">
+                    <div className=" hero-content w-[90%] h-40  border-[1px] border-white rounded-xl">
+                        <div className="w-[45%] flex items-center flex-col gap-2 justify-center">
+                            <CustomFont highlightedTitle><span>{days}</span></CustomFont>
+                            <CustomFont highlightedTitle><span className="text-3xl uppercase">days</span></CustomFont>
                         </div>
-                        <div className="absolute top-[-15px] left-5">
-                            <img src={moon} className="object-contain w-80 block" />
+                        <div className="w-[55%] flex items-center justify-evenly">
+                            <div className="flex items-center justify-center gap-5">
+                                <div className="flex items-center justify-center flex-col">
+                                    <CustomFont highlightedTitle>{hours}</CustomFont>
+                                    <span className="font-primary text-transparent text-stroke-primary uppercase text-3xl">Hours</span>
+                                </div>
+                                <div className="flex items-center flex-col gap-2 justify-center">
+                                    <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                    <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-center gap-5">
+                                <div className="flex items-center justify-center flex-col">
+                                    <CustomFont highlightedTitle>{minutes}</CustomFont>
+                                    <span className="uppercase text-3xl text-transparent text-stroke-primary font-primary">Min</span>
+                                </div>
+                                <div className="flex items-center flex-col gap-2 justify-center">
+                                    <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                    <div className="w-3 h-3 bg-[#52D3D8]"></div>
+                                </div>
+                            </div>
+                            <div className="flex items-center justify-center gap-5">
+                                <div className="flex items-center justify-center flex-col">
+                                    <CustomFont highlightedTitle>{seconds}</CustomFont>
+                                    <span className="uppercase text-3xl text-transparent text-stroke-primary font-primary">Sec</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
+                    <div className="absolute top-[-15px] left-5">
+                        <img src={moon} className="object-contain w-80 block" />
+                    </div>
                 </div>
-
-            </SectionLayout>
-
+            </div>
         </>
     );
 };
