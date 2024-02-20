@@ -1,0 +1,24 @@
+<svg id="svg" viewBox="0 20 1040 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- First Path -->
+  <path id="curve" d="M2363.28 177.653C2238.99 297.084 2046.44 460.919 1764.58 237.094" stroke="white" stroke-width="100"/>
+  <!-- Second Path -->
+  <path id="curve" d="M1778.68 248.385C1638.61 139.067 1457.21 -56.4854 1209.88 224.636" stroke="white" stroke-width="100"/>
+  <!-- Third Path -->
+  <path id="curve" d="M33.4479 212.654C166.265 94.9759 371.147 -65.5372 651.76 176.423" stroke="#55FFFF" stroke-width="100"/>
+  <!-- Fourth Path -->
+  <path id="curve" d="M33.4479 212.654C166.265 94.9759 371.147 -65.5372 651.76 176.423" stroke="white" stroke-width="100"/>
+  <!-- Fifth Path -->
+  <path id="curve" d="M637.733 164.221C777.261 282.497 955.713 491.195 1221.83 212.317" stroke="#55FFFF" stroke-width="100"/>
+  <!-- Sixth Path -->
+  <path id="curve" d="M637.733 164.221C777.261 282.497 955.713 491.195 1221.83 212.317" stroke="white" stroke-width="100"/>
+  
+  <!-- Original Path with Text -->
+  <!-- <path id="curve" d="M 0,7000 C 0,7000 0,350 -50,350 C 152.13333333333333,306 304.26666666666665,262 445,298 C 585.7333333333333,334 715.0666666666668,450 879,472 C 1042.9333333333332,494 1241.4666666666667,422 1440,350 C 1440,350 1440,700 1440,700 Z">
+  </path> -->
+  <text x="-2000">
+    <textPath xlink:href="#curve">
+      CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE MARQUEE • CURVE...
+    </textPath>
+    <animate attributeName="x" dur="30s" values="-4000;0" repeatCount="indefinite"></animate>
+  </text>
+</svg>
