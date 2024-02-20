@@ -1,5 +1,7 @@
 import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
+import Space from "/images/space.png";
+import Gun from "/images/gun.png";
 
 interface RulesItem {
   title: string;
@@ -60,7 +62,7 @@ const Rules: FC = () => {
         <div className="mb-10">
           <h1 className="font-tertiary font-semibold text-4xl">HACKNITE RULES & REGULATION</h1>
         </div>
-        <div >
+        <div>
           <ul className="">
             {data.map((item, index) => (
               <li className="mb-5" key={index}>
@@ -69,6 +71,8 @@ const Rules: FC = () => {
               </li>
             ))}
           </ul>
+          <img src={Space} alt="space" className="absolute top-[150px] right-[200px] w-[500px]" />
+          <img src={Gun} alt="gun" className="absolute bottom-[50px] left-[50px] w-[300px]" />
         </div>
       </SectionLayout>
     </>

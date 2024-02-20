@@ -1,5 +1,5 @@
 import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
-
+import Jupiter from "/images/Jupiter.png";
 import { FC } from "react";
 
 interface TimeFlowItem {
@@ -47,7 +47,7 @@ const TimeFlow: FC = () => {
               </li>
             ))}
           </ul>
-
+              <img src={Jupiter} alt="Jupiter" className="absolute top-0 right-0 " />
         </div>
       </SectionLayout>
     </>
