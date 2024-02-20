@@ -66,8 +66,8 @@ const Rules: FC = () => {
           <ul className="">
             {data.map((item, index) => (
               <li className="mb-5" key={index}>
-                <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
-                <p className="font-tertiary font-extralight w-[700px]">{item.description}</p>
+                <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-3xl">{item.title}</h2>
+                <p className="font-tertiary font-extralight w-[700px] text-xl">{item.description}</p>
               </li>
             ))}
           </ul>
