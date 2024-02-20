@@ -8,7 +8,9 @@ import Theme from "@/widgets/Theme/ui/Page/Page";
 import About from "@/widgets/About/ui/Page/Page";
 import AboutUs from "@/widgets/AboutUs/ui/Page/Page";
 import { Hacknite } from "@/widgets/Hacknite";
-import ThreeScene from "../components/Three";
+import { Rules } from "@/widgets/Rules";
+import { Venue } from "@/widgets/Venue";
+import { TimeFlow } from "@/widgets/TimeFlow";
 
 const Home: FC = () => {
   return (
@@ -16,12 +18,15 @@ const Home: FC = () => {
         <Hero />
       <CountDown />
       <Prize />
-      <Theme />
-      <Sponsers />
-      <About />
-      <Register />
-      <AboutUs />
-      <Hacknite />
+      <Theme/>
+      <Sponsers/>
+      <TimeFlow/>
+      <Venue/>
+      <Rules/>
+      <About/>
+      <Register/>
+      <AboutUs/>
+      <Hacknite/>
     </>
   );
 };
