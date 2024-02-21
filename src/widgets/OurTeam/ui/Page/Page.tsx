@@ -1,7 +1,6 @@
 import { CustomFont } from "@/widgets/CustomFont";
 import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
-import { Link } from "react-router-dom";
 
 const OurTeam: FC = () => {
   return (

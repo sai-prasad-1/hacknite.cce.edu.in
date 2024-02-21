@@ -9,12 +9,6 @@ import Theme from "@/widgets/Theme/ui/Page/Page";
 import Sponsers from "@/widgets/Sponsers/ui/Page/Page";
 import { Events } from "@/widgets/Events";
 
-import AboutUs from "@/widgets/AboutUs/ui/Page/Page";
-import { Hacknite } from "@/widgets/Hacknite";
-import { OurTeam } from "@/widgets/OurTeam";
-import { Rules } from "@/widgets/Rules";
-import { Venue } from "@/widgets/Venue";
-import { TimeFlow } from "@/widgets/TimeFlow";
 
 const Home: FC = () => {
   return (
