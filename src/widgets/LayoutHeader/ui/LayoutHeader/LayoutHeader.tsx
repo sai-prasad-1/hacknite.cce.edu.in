@@ -9,7 +9,7 @@ const LayoutHeader: FC = () => {
         <header className="navbar text-white p-5 font-tertiary">
           <div className="navbar-start ">
 
-            <a className="btn bg-transparent border-none hover:bg-transparent"><img src="/images/IMG_5548 3.png" alt="logo" width={100} height={100} /></a>
+            <a className=" bg-transparent border-none hover:bg-transparent"><img src="/images/IMG_5548 3.png" alt="logo" width={200} height={100} /></a>
           </div>
 
           <div className="navbar-end gap-10">
