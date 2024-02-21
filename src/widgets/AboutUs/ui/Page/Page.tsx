@@ -1,7 +1,6 @@
 import { CustomFont } from "@/widgets/CustomFont";
 import { FC } from "react";
 
-
 const AboutUs: FC = () => {
     return (
         <>

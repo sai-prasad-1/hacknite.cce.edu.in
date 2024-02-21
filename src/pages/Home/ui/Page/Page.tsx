@@ -9,6 +9,7 @@ import Theme from "@/widgets/Theme/ui/Page/Page";
 import Sponsers from "@/widgets/Sponsers/ui/Page/Page";
 import { Events } from "@/widgets/Events";
 
+
 const Home: FC = () => {
   return (
     <>
