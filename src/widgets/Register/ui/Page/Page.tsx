@@ -14,7 +14,7 @@ const Register: FC = () => {
                     <p className="text-justify font-tertiary text-2xl">
                         Don't miss your chance to be a part of something extraordinary. Register now and prepare to hack the night away at HackNite !
                     </p>
-                    <a className="btn bg-transparent border-none hover:bg-transparent"><img src="/images/register_now.svg" alt="logo" className="object-contain w-48" /></a>
+                    <a className="btn bg-transparent border-none hover:bg-transparent" href="https://hacknite.devfolio.co" target="/"><img src="/images/register_now.svg" alt="logo" className="object-contain w-48" /></a>
                 </div>
             </div>
         </>
