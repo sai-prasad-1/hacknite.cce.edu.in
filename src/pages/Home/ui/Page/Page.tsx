@@ -14,22 +14,20 @@ const Home: FC = () => {
     <>
 
       <section className="bg-hero-img bg-center bg-cover bg-no-repeat ">
-        <SectionLayout full transparent>
+        <SectionLayout transparent>
           <Hero />
-        </SectionLayout>
-        <SectionLayout transparent>
           <CountDown />
-        </SectionLayout>
-        <SectionLayout transparent>
           <Prize />
         </SectionLayout>
       </section>
       <SectionLayout>
         <Register />
       </SectionLayout>
-      <SectionLayout>
-        <About />
-      </SectionLayout>
+      <div className="bg-[url('/images/alien.png')] bg-contain bg-right bg-no-repeat">
+        <SectionLayout transparent>
+          <About />
+        </SectionLayout>
+      </div>
       <div className="bg-[#2DC3C3]">
         <SectionLayout noVerticalLines transparent>
           <Theme />

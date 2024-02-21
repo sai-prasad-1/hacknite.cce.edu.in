@@ -61,7 +61,7 @@ const TimeFlow: FC = () => {
             </li>
           ))}
         </ul>
-        <img src={Jupiter} alt="Jupiter" className="absolute top-0 right-0 " />
+        <img src={Jupiter} alt="Jupiter" className="absolute top-0 right-0 object-contain " />
       </div>
     </div>
   );

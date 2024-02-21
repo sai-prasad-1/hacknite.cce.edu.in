@@ -4,7 +4,7 @@ import { FC } from "react";
 
 const LayoutFooter: FC = () => {
   return (
-    <div className="bg-[url('/images/about_hacknight.png')]  overflow-clip bg-cover bg-left-top bg-no-repeat">
+    <div className="overflow-clip relative">
       <SectionLayout transparent>
         <div className=" min-h-[50vh]">
           <CustomFont title><span className="text-5xl">WANT TO <span className="text-[#27FFFF]">KNOW MORE</span> ?<br />
@@ -27,8 +27,8 @@ const LayoutFooter: FC = () => {
               <div>
                 <CustomFont>
                   <span className="text-[#D8D8D8]">
-                  +91&nbsp;9567626955<br />
-                  +91&nbsp;9188049669
+                    +91&nbsp;9567626955<br />
+                    +91&nbsp;9188049669
                   </span>
                 </CustomFont>
               </div>
@@ -52,6 +52,7 @@ const LayoutFooter: FC = () => {
           <CustomFont description><a className="text-[#ffffffa5] link link-hover text-xl">Copyright © 2024 Community Of Developers. All Rights Reserved.</a></CustomFont>
         </div>
       </SectionLayout>
+      <img src="/images/about_hacknight.png"  className="object-cover absolute top-[-180px] right-[-150px]"/>
     </div>
 
   );
