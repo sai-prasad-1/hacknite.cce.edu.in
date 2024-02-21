@@ -1,5 +1,7 @@
-import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
+import Space from "/images/space.png";
+import Gun from "/images/gun.png";
+import { CustomFont } from "@/widgets/CustomFont";
 
 interface RulesItem {
   title: string;
@@ -33,45 +35,43 @@ const Rules: FC = () => {
       description: "All teams must be present at designated checkpoints for progress updates.",
     },
     {
-        title: "Decorum",
-        description: "Participants must maintain professionalism and respect towards fellow participants, mentors, and organizers throughout the event.",
-      },
-      {
-        title: "Breaks",
-        description: "Optional breaks will be provided during the event, but teams can continue working if they choose.",
-      },
-      {
-        title: "Food",
-        description: "Meals are scheduled to be served at breakfast, lunch, and dinner.",
-      },
-      {
-        title: "Prototype Submission",
-        description: "All teams must submit their prototypes by 10:00 AM 29 February sharp.",
-      },
-      {
-        title: "Presentation Time Limit",
-        description: "Each team will have a specified time limit for their final presentation.",
-      },
+      title: "Decorum",
+      description: "Participants must maintain professionalism and respect towards fellow participants, mentors, and organizers throughout the event.",
+    },
+    {
+      title: "Breaks",
+      description: "Optional breaks will be provided during the event, but teams can continue working if they choose.",
+    },
+    {
+      title: "Food",
+      description: "Meals are scheduled to be served at breakfast, lunch, and dinner.",
+    },
+    {
+      title: "Prototype Submission",
+      description: "All teams must submit their prototypes by 10:00 AM 29 February sharp.",
+    },
+    {
+      title: "Presentation Time Limit",
+      description: "Each team will have a specified time limit for their final presentation.",
+    },
   ];
 
   return (
-    <>
-      <SectionLayout>
-        <div className="mb-10">
-          <h1 className="font-tertiary font-semibold text-4xl">HACKNITE RULES & REGULATION</h1>
-        </div>
-        <div >
-          <ul className="">
-            {data.map((item, index) => (
-              <li className="mb-5" key={index}>
-                <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
-                <p className="font-tertiary font-extralight w-[700px]">{item.description}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </SectionLayout>
-    </>
+    <div className="flex items-center justify-center gap-5 flex-col">
+      <CustomFont title>HACKNITE RULES &amp; REGULATION</CustomFont>
+      <div className="relative w-full">
+        <ul className="z-50">
+          {data.map((item, index) => (
+            <li className="mb-5" key={index}>
+              <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-3xl">{item.title}</h2>
+              <p className="font-tertiary font-extralight w-[700px] text-xl">{item.description}</p>
+            </li>
+          ))}
+        </ul>
+        <img src={Space} alt="space" className="absolute top-[150px] right-5 w-96 object-contain" />
+        <img src={Gun} alt="gun" className="absolute bottom-10 left-[50px] z-[-10px] w-96 object-contain" />
+      </div>
+    </div>
   );
 };
 

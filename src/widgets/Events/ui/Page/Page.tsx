@@ -1,5 +1,4 @@
 import { CustomFont } from "@/widgets/CustomFont";
-import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayout";
 import { FC } from "react";
 import { EmblaOptionsType } from 'embla-carousel'
 import EmblaCarousel from "../components/carousel/EmblaCarousel";
@@ -14,18 +13,13 @@ const Events: FC = () => {
 
     return (
         <>
-            <SectionLayout>
-                <CustomFont>
-                    <div className="flex items-start justify-center flex-col">
-                        <CustomFont description>More <span className="text-4xl">Events</span></CustomFont>
-                        <span className="text-2xl">Explore more events conducted by</span>
-                        <span className="text-4xl last:lowercase uppercase">CODe</span>
-                    </div>
-                </CustomFont>
-                <div>
-                    <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-                </div>
-            </SectionLayout>
+            <div className="flex items-center justify-center gap-5 flex-col">
+                <CustomFont title>More Events</CustomFont>
+                <CustomFont description>Explore more events conducted by<span className="text-[#55FFFF]">&nbsp;CODe</span></CustomFont>
+            </div>
+            <div>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+            </div>
         </>
     );
 };
