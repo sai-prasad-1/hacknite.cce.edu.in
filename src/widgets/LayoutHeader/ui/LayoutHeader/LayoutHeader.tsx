@@ -2,6 +2,7 @@ import SectionLayout from "@/widgets/SectionLayout/ui/SectionLayout/SectionLayou
 import { FC, useState } from "react";
 import close from "/icons/close.svg";
 import menu from "/icons/ham_menu.svg";
+import { Link } from "react-router-dom";
 
 const LayoutHeader: FC = () => {
   const [click, setClick] = useState(false);
@@ -33,9 +34,9 @@ const LayoutHeader: FC = () => {
           </div>
 
           <div className="navbar-end gap-5 hidden sm:flex">
-            <a className="link link-hover uppercase hidden lg:block" href="/">Home</a>
+            <Link className="link link-hover uppercase hidden lg:block" to={"/home"}>Home</Link>
             <a className="link link-hover uppercase hidden lg:block" href="#events">Events</a>
-            <a className="link link-hover uppercase hidden lg:block" href="/timeline">TimeLine</a>
+            <Link className="link link-hover uppercase hidden lg:block" to={"/timeline"}>TimeLine</Link>
             <a className="link link-hover uppercase hidden lg:block" href="/about">About</a>
             <a className="btn btn-ghost hover:bg-transparent" href="https://hacknite.devfolio.co" target="_blank" rel="noopener noreferrer"><img src="/images/register_now.svg" alt="logo" className="object-contain scale-75" /></a>
           </div>
