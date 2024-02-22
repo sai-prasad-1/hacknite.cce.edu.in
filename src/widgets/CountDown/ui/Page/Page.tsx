@@ -48,16 +48,16 @@ const CountDown: FC<Time> = () => {
         <>
             <div className="min-h-[70vh] flex items-center justify-center">
                 <div className="flex justify-center p-10 relative items-center w-full">
-                    <div className=" hero-content w-[90%] h-40  border-[1px] border-white rounded-xl">
-                        <div className="w-[45%] flex items-center flex-col gap-2 justify-center">
-                            <CustomFont numeric><span>{days}</span></CustomFont>
-                            <span className="font-primary text-primary uppercase text-3xl">days</span>
-                        </div>
-                        <div className="w-[55%] flex items-center justify-evenly">
+                    <div className=" hero-content justify-end w-[90%] h-40  border-[1px] border-white rounded-xl">
+                        <div className=" w-full lg:w-[80%] flex items-center justify-evenly">
+                            <div className=" items-center flex-col gap-2 justify-center hidden lg:flex ">
+                                <CustomFont numeric><span>{days}</span></CustomFont>
+                                <CustomFont highlightedDescription><span className="font-primary uppercase text-3xl">Days</span></CustomFont>
+                            </div>
                             <div className="flex items-center justify-center gap-5">
                                 <div className="flex items-center justify-center flex-col">
                                     <CustomFont numeric>{hours}</CustomFont>
-                                    <span className="font-primary text-transparent text-stroke-primary uppercase text-3xl">Hours</span>
+                                    <CustomFont description><span className="font-primary text-transparent text-stroke-primary uppercase text-3xl">Hours</span></CustomFont>
                                 </div>
                                 <div className="flex items-center flex-col gap-2 justify-center">
                                     <div className="w-3 h-3 bg-[#52D3D8]"></div>
