@@ -35,7 +35,7 @@ const SectionLayout = ({
             className={clsx(
                 "w-screen min-w-80 overflow-x-clip border border-x-0 border-t-0 border-quarternary px-6 sm:px-12",
                 {
-                    "fixed left-0 right-0 top-0 z-10": float,
+                    "fixed z-50": float,
                     "bg-tertiary": !transparent,
                     "bg-transparent": transparent,
                     "backdrop-blur-3xl": glassMorphism,
