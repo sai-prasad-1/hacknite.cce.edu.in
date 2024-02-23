@@ -22,7 +22,7 @@ const Hero: FC = () => {
       <CustomFont description><span className="text-4xl font-tertiary mb-6">28th-29th Februrary,2024</span></CustomFont>
       <div 
 	data-hackathon-slug="hacknite" 
-	data-button-theme="dark"
+	data-button-theme="dark-inverted"
 	className="h-[44] w-[312px] apply-button mt-4"
 >
 </div>
