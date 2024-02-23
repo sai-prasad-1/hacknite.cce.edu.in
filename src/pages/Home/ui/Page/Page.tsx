@@ -11,10 +11,11 @@ import { Events } from "@/widgets/Events";
 
 
 const Home: FC = () => {
+
   return (
     <>
 
-      <section className="bg-hero-img bg-center bg-cover bg-no-repeat ">
+      <section className="bg-hero-img bg-center bg-cover bg-no-repeat mt-[-9]">
         <SectionLayout transparent>
           <Hero />
           <CountDown />
