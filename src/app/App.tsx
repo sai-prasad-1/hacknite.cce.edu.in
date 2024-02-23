@@ -10,6 +10,7 @@ const App: FC = () => {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
+        <Route index path="/" element={<Home />} />
           <Route index path="/home" element={<Home />} />
           <Route path="/timeline" element={<TimeLine />} />
           <Route path="/about" element={<About />} />
