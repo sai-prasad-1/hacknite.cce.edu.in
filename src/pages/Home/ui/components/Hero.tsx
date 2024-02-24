@@ -1,4 +1,3 @@
-import { CustomFont } from "@/widgets/CustomFont";
 import { FC, useEffect } from "react";
 // import ThreeScene from "./Three";
 
