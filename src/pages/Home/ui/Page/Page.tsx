@@ -22,22 +22,32 @@ const Home: FC = () => {
           <Prize />
         </SectionLayout>
       </section>
+
+
       <SectionLayout>
         <Register />
       </SectionLayout>
+
+
       <div className="bg-[url('/images/alien.png')] bg-contain bg-right bg-no-repeat">
         <SectionLayout transparent>
           <About />
         </SectionLayout>
       </div>
+
+
       <div className="bg-[#2DC3C3]">
         <SectionLayout noVerticalLines transparent>
           <Theme />
         </SectionLayout>
       </div>
+
+
       <SectionLayout>
         <Sponsers />
       </SectionLayout>
+
+      
       <div id="events">
         <SectionLayout>
           <Events />

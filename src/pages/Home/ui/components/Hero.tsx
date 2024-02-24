@@ -12,20 +12,20 @@ const Hero: FC = () => {
     return () => {
       document.body.removeChild(script);
     }
-}, []);
+  }, []);
   return (
-    <div className=" min-h-screen flex-col flex items-center justify-center">
+    <div className=" min-h-[70vh] flex-col flex items-center justify-center">
       <img
         src="/images/hacknight.png"
-        className=" w-2/3 object-contain scale-90"
+        className=" object-contain w-80 scale-75 sm:scale-90"
       />
-      <CustomFont description><span className="text-4xl font-tertiary mb-6">28th-29th Februrary,2024</span></CustomFont>
-      <div 
-	data-hackathon-slug="hacknite" 
-	data-button-theme="dark-inverted"
-	className="h-[44] w-[312px] apply-button mt-4"
->
-</div>
+      <span className=" text-xl sm:text-2xl md:text-3xl w-full lg:text-4xl font-tertiary text-center">28th-29th Februrary,2024</span>
+      <div
+        data-hackathon-slug="hacknite"
+        data-button-theme="dark-inverted"
+        className="h-[44] w-[312px] apply-button mt-4 rounded-lg"
+      >
+      </div>
     </div>
   );
 };

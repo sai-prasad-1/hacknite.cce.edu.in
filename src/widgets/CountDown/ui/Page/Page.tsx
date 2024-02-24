@@ -47,9 +47,9 @@ const CountDown: FC<Time> = () => {
     return (
         <>
             <div className="min-h-[70vh] flex items-center justify-center">
-                <div className="flex justify-center p-10 relative items-center w-full">
-                    <div className=" hero-content justify-end w-[90%] h-40  border-[1px] border-white rounded-xl">
-                        <div className=" w-full lg:w-[80%] flex items-center justify-evenly">
+                <div className="flex justify-center sm:p-10 flex-col-reverse lg:relative items-center w-full">
+                    <div className=" hero-content justify-end w-full md:w-[90%] h-full sm:h-40  border-[1px] border-white rounded-xl">
+                        <div className=" w-full lg:w-[80%] flex items-center flex-wrap justify-evenly">
                             <div className=" items-center flex-col gap-2 justify-center hidden lg:flex ">
                                 <CustomFont numeric><span>{days}</span></CustomFont>
                                 <CustomFont highlightedDescription><span className="font-primary uppercase text-3xl">Days</span></CustomFont>
@@ -83,8 +83,12 @@ const CountDown: FC<Time> = () => {
 
                         </div>
                     </div>
-                    <div className="absolute top-[-15px] left-5">
-                        <img src={moon} className="object-contain w-80 block" />
+                    <div className="lg:absolute lg:top-[-15px] lg:left-5 flex items-center justify-center">
+                        <img src={moon} className="object-contain w-32 sm:w-64 md:w-80 block" />
+                        <div className=" items-center justify-center flex-col flex lg:hidden">
+                            <CustomFont numeric><span className="text-3xl sm:text-5xl md:text-7xl">{days}</span></CustomFont>
+                            <CustomFont highlightedDescription><span className="font-primary uppercase text-3xl sm:text-5xl md:text-7xl">Days</span></CustomFont>
+                        </div>
                     </div>
                 </div>
             </div>

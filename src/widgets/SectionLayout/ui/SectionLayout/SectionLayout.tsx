@@ -33,7 +33,7 @@ const SectionLayout = ({
     return (
         <div
             className={clsx(
-                "w-screen min-w-80 overflow-x-clip border border-x-0 border-t-0 border-quarternary px-6 sm:px-12 my-8",
+                "w-screen min-w-80 overflow-x-clip border border-x-0 border-t-0 border-quarternary px-6 sm:px-12",
                 {
                     "fixed z-50": float,
                     "bg-tertiary": !transparent,
