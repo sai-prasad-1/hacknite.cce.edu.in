@@ -45,7 +45,7 @@ const TimeFlow: FC = () => {
         TIMELINE OF HACKNITE
       </CustomFont>
       <div>
-        <ul className="flex justify-between items-start relative mb-10 z-10">
+        <ul className="flex justify-between flex-wrap items-start gap-5 relative mb-10 z-10">
           {data.map((item, index) => (
             <li className="flex flex-col justify-center items-start w-fit" key={index}>
               <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>
@@ -53,7 +53,7 @@ const TimeFlow: FC = () => {
             </li>
           ))}
         </ul>
-        <ul className="flex justify-between items-start relative z-10">
+        <ul className="flex justify-between flex-wrap items-start gap-5 relative z-10">
           {Data.map((item, index) => (
             <li className="flex flex-col justify-center items-start" key={index}>
               <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-2xl">{item.title}</h2>

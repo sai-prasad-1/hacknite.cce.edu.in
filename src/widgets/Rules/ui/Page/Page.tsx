@@ -57,19 +57,19 @@ const Rules: FC = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center gap-5 flex-col">
+    <div className="flex items-center justify-center gap-5 flex-col overflow-clip">
       <CustomFont title>HACKNITE RULES &amp; REGULATION</CustomFont>
       <div className="relative w-full">
-        <ul className="z-50">
+        <ul className="relative z-50">
           {data.map((item, index) => (
             <li className="mb-5" key={index}>
               <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-3xl">{item.title}</h2>
-              <p className="font-tertiary font-extralight w-[700px] text-xl">{item.description}</p>
+              <p className="font-tertiary font-extralight w-[80%] text-xl">{item.description}</p>
             </li>
           ))}
         </ul>
-        <img src={Space} alt="space" className="absolute top-[150px] right-5 w-96 object-contain" />
-        <img src={Gun} alt="gun" className="absolute bottom-10 left-[50px] z-[-10px] w-96 object-contain" />
+        <img src={Space} alt="space" className="absolute top-[150px] right-5 w-96 object-contain z-10" />
+        <img src={Gun} alt="gun" className="absolute bottom-10 left-[50px] w-96 object-contain z-10" />
       </div>
     </div>
   );
