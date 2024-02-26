@@ -46,7 +46,7 @@ const CountDown: FC<Time> = () => {
 
     return (
         <>
-            <div className="min-h-[70vh] flex items-center justify-center">
+            <div className="flex items-center justify-center my-10 p-10">
                 <div className="flex justify-center sm:p-10 flex-col-reverse lg:relative items-center w-full">
                     <div className=" hero-content justify-end w-full md:w-[90%] h-full sm:h-40  border-[1px] border-white rounded-xl">
                         <div className=" w-full lg:w-[80%] flex items-center flex-wrap justify-evenly">

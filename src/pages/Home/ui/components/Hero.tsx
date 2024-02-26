@@ -19,10 +19,11 @@ const Hero: FC = () => {
         className=" object-contain w-80 scale-75 sm:scale-90"
       />
       <span className=" text-xl sm:text-2xl md:text-3xl w-full lg:text-4xl font-tertiary text-center">28th-29th Februrary,2024</span>
-      <div className="rounded-lg h-[44] w-[312px]">
+      <div className="rounded-lg">
         <div
           data-hackathon-slug="hacknite"
           data-button-theme="dark-inverted"
+          className="h-[44] w-[312px]"
         >
         </div>
       </div>
