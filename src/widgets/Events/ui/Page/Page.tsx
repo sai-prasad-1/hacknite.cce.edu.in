@@ -7,8 +7,6 @@ import '../components/carousel/embla.css'
 const Events: FC = () => {
 
     const OPTIONS: EmblaOptionsType = { loop: true }
-    const SLIDE_COUNT = 5
-    const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 
     return (
@@ -18,7 +16,7 @@ const Events: FC = () => {
                 <CustomFont description>Explore more events conducted by<span className="text-[#55FFFF]">&nbsp;CODe</span></CustomFont>
             </div>
             <div>
-                <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+                <EmblaCarousel options={OPTIONS} />
             </div>
         </>
     );

@@ -1,31 +1,38 @@
 import styles from "./events-card.module.css";
 import clsx from "clsx";
 
+type EventsCardProps = {
+  frontImageUrl: string;
+  backImageUrl: string;
+  url: string;
+};
 
-const EventsCard = () => {
+const EventsCard: React.FC<EventsCardProps> = ({ frontImageUrl, backImageUrl, url }) => {
   return (
-    <div
-      className={clsx(styles["flip"], "w-[240px] md:w-[300px] lg:w-[360px]")}
-    >
-      <div className={styles["flip-content"]}>
-        <div className={styles["flip-front"]}>
-          <img
-            src="/images/event-1.png"
-            alt="Event 1 (Front Side)"
-            width={300}
-            height={375}
-          />
-        </div>
-        <div className={styles["flip-back"]}>
-          <img
-            src="/images/event-1.png"
-            alt="Event 1 (Back Side)"
-            width={300}
-            height={375}
-          />
+    <a href={url} target="/">
+      <div className={clsx(styles.flip, "w-[240px] md:w-[300px] lg:w-[360px] cursor-pointer")}>
+        <div className={styles["flip-content"]}>
+          <div className={styles["flip-front"]}>
+            <img
+              src={frontImageUrl}
+              alt="Front Side"
+              width={300}
+              height={375}
+            />
+          </div>
+          <div className={styles["flip-back"]}>
+            <img
+              src={backImageUrl}
+              alt="Back Side"
+              width={300}
+              height={375}
+            />
+          </div>
         </div>
       </div>
-    </div>
+
+    </a>
+
   );
 };
 

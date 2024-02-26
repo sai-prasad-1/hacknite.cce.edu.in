@@ -13,17 +13,18 @@ const Hero: FC = () => {
     }
   }, []);
   return (
-    <div className=" min-h-[70vh] flex-col flex items-center justify-center">
+    <div className=" min-h-[70vh] flex-col flex items-center justify-center gap-5">
       <img
         src="/images/hacknight.png"
         className=" object-contain w-80 scale-75 sm:scale-90"
       />
       <span className=" text-xl sm:text-2xl md:text-3xl w-full lg:text-4xl font-tertiary text-center">28th-29th Februrary,2024</span>
-      <div
-        data-hackathon-slug="hacknite"
-        data-button-theme="dark-inverted"
-        className="h-[44] w-[312px] apply-button mt-4 rounded-lg"
-      >
+      <div className="rounded-lg h-[44] w-[312px]">
+        <div
+          data-hackathon-slug="hacknite"
+          data-button-theme="dark-inverted"
+        >
+        </div>
       </div>
     </div>
   );
