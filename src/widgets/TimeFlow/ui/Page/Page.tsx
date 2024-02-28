@@ -40,7 +40,7 @@ const TimeFlow: FC = () => {
   ];
 
   return (
-    <div className="min-h-screen relative z-30 flex items-center justify-center gap-10 flex-col">
+    <div className="min-h-screen mt-20 sm:mt-0 relative z-20 flex items-center justify-center gap-10 flex-col">
       <CustomFont title>
         TIMELINE OF HACKNITE
       </CustomFont>
