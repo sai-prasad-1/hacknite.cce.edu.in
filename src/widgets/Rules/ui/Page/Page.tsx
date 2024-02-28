@@ -60,7 +60,7 @@ const Rules: FC = () => {
     <div className="flex items-center justify-center gap-5 flex-col overflow-clip">
       <CustomFont title>HACKNITE RULES &amp; REGULATION</CustomFont>
       <div className="relative w-full">
-        <ul className="relative z-50">
+        <ul className="relative z-20">
           {data.map((item, index) => (
             <li className="mb-5" key={index}>
               <h2 className="font-tertiary capitalize text-[#5CD2EE] font-bold text-3xl">{item.title}</h2>

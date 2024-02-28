@@ -6,7 +6,7 @@ const LayoutFooter: FC = () => {
   return (
     <>
       <SectionLayout transparent>
-        <div className=" min-h-[50vh] bg-[url('/images/about_hacknight.png')] bg-right-top bg-no-repeat bg-cover ">
+        <div className=" min-h-[50vh] bg-[url('/images/about_hacknight.png')] bg-right-top bg-no-repeat bg-contain ">
           <CustomFont title><span className="text-5xl">WANT TO <span className="text-[#27FFFF]">KNOW MORE</span> ?<br />
             CONNECT WITH US.</span>
           </CustomFont>

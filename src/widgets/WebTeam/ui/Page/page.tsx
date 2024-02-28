@@ -15,7 +15,7 @@ const WebsiteTeam: FC = () => {
                         <ProfileCard name="Alfrin Poulose" role="Developer" imgUrl="/images/webteam/alfrin-pic.png" />
                     </div>
                     <div className="col-span-2">
-                        <ProfileCard name="Mihraj P S" role="Website Supervisor" imgUrl="/images/webteam/alfrin-pic.png" />
+                        <ProfileCard name="Mihraj P S" role="Website Supervisor" imgUrl="/images/webteam/mihraj-pic.png" />
                     </div>
                     <div className="row-start-2 col-span-2">
                         <ProfileCard name="Francis Gigi" role="UI/UX Designer" imgUrl="/images/webteam/francis-pic.png" />
