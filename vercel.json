@@ -1,7 +1,8 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/" },
-    { "source": "/home", "destination": "/home" },
-    { "source": "/timeline", "destination": "/timeline" }
+    { "source": "/home", "destination": "https://hacknite.cce.edu.in" },
+    { "source": "/timeline", "destination": "https://hacknite.cce.edu.in/timeline" },
+    { "source": "/about", "destination": "https://hacknite.cce.edu.in/about" }
   ]
 }
